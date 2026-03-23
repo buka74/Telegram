@@ -1,27 +1,27 @@
-﻿#!/bin/bash
+#!/bin/bash
 
-# Script for Debian 10-12 and Ubuntu 20.04-24.04
+# Скрипт для Debian 10-12 и Ubuntu 20.04-24.04
 
 set -e
 
-# Colors for output
+# Цвета для вывода
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
-NC='\033[0m' # No color
+NC='\033[0m' # Нет цвета
 
-# Function to print a colored message
+# Функция для вывода цветного сообщения
 print_status() {
     echo -e "${GREEN}* ${NC}$1"
 }
 
 print_warning() {
-    echo -e "${YELLOW}[WARNING]${NC} $1"
+    echo -e "${YELLOW}[ВНИМАНИЕ]${NC} $1"
 }
 
 print_error() {
-    echo -e "${RED}[ERROR]${NC} $1"
+    echo -e "${RED}[ОШИБКА]${NC} $1"
 }
 
 print_header() {
